@@ -1,0 +1,50 @@
+body {
+
+  background-size: 75%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+
+  width: 100%;
+  background: #f00120;
+  height: 75px;
+  }
+  #header1{
+  			width: 8%;
+  			 background: #00ff00;
+  			height: 75px;
+  			}
+
+#leftcol {
+
+  float: left;
+  width: 25%;
+  height: 850px;
+  background: #ffbdef;
+}
+
+#rightcol {
+
+  float: right;
+  width: 25%;
+  height: 850px;
+  background: #bf1234;
+}
+
+#content {
+
+ background: #0000ff;
+  float: left;
+  width: 50%;
+  height: 850px;
+}
+
+#footer {
+
+  clear: both;
+  width: 100%;
+  background: #00ff00;
+  height: 75px;
+}

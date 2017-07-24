@@ -1,0 +1,42 @@
+body {
+
+  background-size: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+
+  width: 100%;
+  background: #ff0000;
+  height: 200px;
+
+}
+
+#leftcol {
+
+  float: left;
+  width: 15%;
+  height: 700px;
+}
+
+#rightcol {
+
+  float: right;
+  width: 15%;
+  height: 700px;
+}
+
+#content {
+
+ background: #FFF;
+  float: left;
+  width: 70%;
+  height: 700px;
+}
+
+#footer {
+
+  clear: both;
+  width: 100%;
+}

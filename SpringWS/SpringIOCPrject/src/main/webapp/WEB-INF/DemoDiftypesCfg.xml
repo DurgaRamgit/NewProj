@@ -1,0 +1,69 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd ">
+        
+        <bean id="dt" class="java.util.Date"/>
+        <bean id="db" class="com.ram.inject.difftypes.DemoBean">
+        <property name="name" value="ram"/>
+        <property name="age" value="24"/>
+        <property name="marks">
+        <list>
+        <value>70</value>
+        <value>90</value>
+        <value>80</value>
+        </list>
+        </property>
+        <property name="subjects">
+        <list>
+        <value>c++</value>
+        <value>java</value>
+        <value>.Net</value>
+        </list>
+        </property>
+        <property name="names">
+        <list>
+        <value>raja</value>
+        <value>rani</value>
+        <value>ram</value>
+        <ref bean="dt"/>
+        </list></property>
+        <property name="phones">
+        <set><value>93939399</value>
+         <value>93939444</value>
+         <value>93939398</value>
+         <ref bean="dt"/>
+        </set></property>
+        <property name="capitals">
+        <map>
+        <entry>
+        <key><value>India</value></key>
+        <value>Delhi</value>
+        </entry>
+        <entry>
+        <key><value>england</value></key>
+        <value>London</value>
+        </entry>
+        <entry>
+        <key><value>Japan</value></key>
+        <value>Tokyo</value>
+        </entry>
+       <entry>
+       <key><ref bean="dt"/></key>
+       <ref bean="dt"/></entry>
+           </map></property>
+           
+           <property name="faculties">
+           <props>
+           <prop key="Ramu"> Java</prop>
+           <prop key="jagan">android</prop>
+           <prop key="raghav">sql</prop></props></property>
+        </bean>
+        </beans>

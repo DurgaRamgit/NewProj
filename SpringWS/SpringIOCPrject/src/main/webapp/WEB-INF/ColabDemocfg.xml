@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd ">
+ 
+	<bean id="t1" class="com.ram.bean.collabaration.TestBean">
+	<property name="msg" value="hai"></property>
+	</bean>
+
+    <bean id="date" class="java.util.Date">
+    <property name="year"><value>115</value></property>
+    
+    <property name="month"><value>11</value></property>
+    <property name="date"><value>05</value></property>
+    </bean>
+	<bean id ="db" class="com.ram.bean.collabaration.DemoBean">
+	<property name="name1" value="ram"/>
+	<property name="age"><value>115</value></property>
+	<property name="d"> <ref bean="date"></ref></property>
+	<property name="tb"><ref bean="t1"></ref></property>
+	</bean>
+ 
+</beans>
